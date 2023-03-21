@@ -21,7 +21,7 @@ function App() {
   }, []);
   const { pathname } = useLocation();
   return (
-    <div className="App min-h-screen">
+    <div className="min-h-screen bg-gradient-to-b from-orange-300 via-amber-200 to-yellow-300">
       {pathname !== "/" && <Menu />}
       <Routes>
         <Route path="/" element={<Landing />} />
