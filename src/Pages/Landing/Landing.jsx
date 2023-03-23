@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
-import Profile from "../../Assets/Profile/Profile.jpg";
-import Fullstack from "../../Assets/fullstacklogo.png";
+import ImageProfile from "./Components/ImageProfile";
 
+import Fullstack from "../../Assets/fullstacklogo.png";
 import WhatsApp from "../../Assets/Icons/whatsapp.svg";
 import Gmail from "../../Assets/Icons/gmail.svg";
 
@@ -11,19 +11,7 @@ function Landing() {
   return (
     <div className="overflow-hidden pt-10">
       <div className="flex justify-center rounded-full px-5">
-        <Link to="/home">
-          <motion.div
-            initial={{ scale: 0.5 }}
-            animate={{ rotate: 360, scale: 1 }}
-            transition={{ duration: 1.5 }}
-          >
-            <img
-              src={Profile}
-              alt="agustin_chavero"
-              className="w-96 rounded-full shadow-lg shadow-black"
-            />
-          </motion.div>
-        </Link>
+        <ImageProfile />
       </div>
       <div className="border-black border-b-2 flex justify-center">
         <Link to="/home">
