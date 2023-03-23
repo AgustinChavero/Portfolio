@@ -3,7 +3,6 @@ import { Routes, Route, useLocation } from "react-router-dom";
 
 import Landing from "./Pages/Landing/Landing";
 import Navbar from "./Components/Navs/Navbar";
-import Menu from "./Components/Navs/Menu";
 import Home from "./Pages/Home/Home";
 import Footer from "./Components/Footer/Footer";
 
@@ -22,7 +21,7 @@ function App() {
   const { pathname } = useLocation();
   return (
     <div className="min-h-screen bg-gradient-to-b from-orange-300 via-amber-200 to-yellow-300">
-      {pathname !== "/" && <Menu />}
+      {pathname !== "/" && <Navbar />}
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/home" element={<Home />} />
