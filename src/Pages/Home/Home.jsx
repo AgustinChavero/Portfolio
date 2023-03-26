@@ -7,10 +7,13 @@ import Proyects from "./Components/Proyects";
 function Home() {
   return (
     <main className="">
-      <div id="AboutMe" className="flex justify-center overflow-hidden py-24">
+      <div id="AboutMe" className="overflow-hidden pt-16">
         <AboutMe />
       </div>
-      <div id="Technologies" className="flex justify-center py-24">
+      <div
+        id="Technologies"
+        className="overflow-hidden flex justify-center py-24"
+      >
         <Technologies />
       </div>
       <div id="Experience" className="flex justify-center py-24">

@@ -20,7 +20,7 @@ function App() {
   }, []);
   const { pathname } = useLocation();
   return (
-    <div className="bg-stars bg-fixed">
+    <div className="bg-black">
       {pathname !== "/" && <Navbar />}
       <Routes>
         <Route path="/" element={<Landing />} />
