@@ -28,8 +28,8 @@ function AboutMe() {
             </div>
           </div>
         </div>
-        <div className="pt-10 lg:flex">
-          <div className="pb-10">
+        <div className="pt-10 lg:flex lg:justify-center">
+          <div className="pb-10 lg:max-w-md">
             <h4 className="font-light text-xl md:text-5xl sm:text-2xl text-left p-5">
               PERSPECTIVA DE USUARIO
             </h4>
@@ -41,7 +41,7 @@ function AboutMe() {
               </p>
             </div>
           </div>
-          <div className="pb-10">
+          <div className="pb-10 lg:max-w-md">
             <h4 className="font-light text-xl md:text-5xl sm:text-2xl text-left p-5">
               SOLUCIONES DIGITALES
             </h4>
@@ -52,9 +52,9 @@ function AboutMe() {
               </p>
             </div>
           </div>
-          <div className="pb-10">
+          <div className="pb-10 lg:max-w-md">
             <h4 className="font-light text-xl md:text-5xl  sm:text-2xl text-left p-5">
-              MANEJO INTUITIVO
+              MANEJO WEB/APP INTUITIVO
             </h4>
             <div className="flex justify-center">
               <p className="text-left font-light px-2 md:px-5 sm:text-xl">
@@ -63,7 +63,7 @@ function AboutMe() {
               </p>
             </div>
           </div>
-          <div className="pb-10">
+          <div className="pb-10 lg:max-w-md">
             <h4 className="font-light text-xl md:text-5xl  sm:text-2xl text-left p-5">
               CONTROL DE GASTOS PREVISTOS
             </h4>
@@ -76,8 +76,8 @@ function AboutMe() {
             </div>
           </div>
         </div>
-        <div className="pt-10 lg:flex">
-          <div className="pb-10">
+        <div className="pt-10 lg:flex lg:justify-center">
+          <div className="pb-10 lg:max-w-md">
             <h4 className="font-light text-xl md:text-5xl  sm:text-2xl text-left p-5">
               RECLUTAMIENTO LABORAL
             </h4>
@@ -89,38 +89,39 @@ function AboutMe() {
               </p>
             </div>
           </div>
-          <div className="pb-10">
+          <div className="pb-10 lg:max-w-md">
             <h4 className="font-light text-xl md:text-5xl sm:text-2xl text-left p-5">
-              ENERGIA POSITIVA
+              BUEN AMBIENTE LABORAL
             </h4>
             <div className="flex justify-center">
               <p className="text-left font-light px-2 md:px-5 sm:text-xl">
-                Logro formar un buen ambiente en el trabajo con energía positiva
-                a través de la cooperación, dedicación, sacrificio y compromiso.
-              </p>
-            </div>
-          </div>
-          <div className="pb-10">
-            <h4 className="font-light text-xl md:text-5xl  sm:text-2xl text-left p-5">
-              CUALIDAD SOFT SKILL
-            </h4>
-            <div className="flex justify-center">
-              <p className="text-left font-light px-2 md:px-5 sm:text-xl">
-                Se trata de hacer que las soluciones aplicadas sean faciles de
-                manejar, para que se pueda administrar de forma independiente.
-              </p>
-            </div>
-          </div>
-          <div className="pb-10">
-            <h4 className="font-light text-xl md:text-5xl  sm:text-2xl text-left p-5">
-              CUALIDAD SOFT SKILL
-            </h4>
-            <div className="flex justify-center">
-              <p className="text-left font-light px-2 md:px-5 sm:text-xl">
-                Capaz de tomar la iniciativa en el reclutamiento de personas
-                capacez con las cuales trabajar, generando un buen ambiente de
-                trabajo de forma grupal con energía positiva a través de la
+                Logro formar una energia positiva en el trabajo a través de la
                 cooperación, dedicación, sacrificio y compromiso.
+              </p>
+            </div>
+          </div>
+          <div className="pb-10 lg:max-w-md">
+            <h4 className="font-light text-xl md:text-5xl  sm:text-2xl text-left p-5">
+              PROACTIVIDAD Y MOTIVACION
+            </h4>
+            <div className="flex justify-center">
+              <p className="text-left font-light px-2 md:px-5 sm:text-xl">
+                Llevo al maximo mis esfuerzos para cumplir mis metas,
+                motivandome tanto a mi como a mis compañeros a dar el 110% de
+                esfuerzo
+              </p>
+            </div>
+          </div>
+          <div className="pb-10 lg:max-w-md">
+            <h4 className="font-light text-xl md:text-5xl  sm:text-2xl text-left p-5">
+              COMUNICACION INTERPERSONAL
+            </h4>
+            <div className="flex justify-center">
+              <p className="text-left font-light px-2 md:px-5 sm:text-xl">
+                Busco un buen trato de forma constante tanto con clientes, como
+                con compañeros o superiores, con la finalidad de lograr alcanzar
+                todas las metas y objetivos propuestas, y seguir manteniendo las
+                relaciones.
               </p>
             </div>
           </div>

@@ -10,7 +10,7 @@ function Menu() {
 
   return (
     <div className="fixed w-full top-0">
-      <nav className="bg-[#181433] flex justify-end text-white transition-all">
+      <nav className="bg-slate-900 flex justify-end text-white transition-all">
         <ul className="">
           <li>
             <button onClick={handleShow}>
@@ -22,8 +22,8 @@ function Menu() {
       <ul
         className={
           show === true
-            ? "bg-[#181433] absolute w-full h-[220px] text-white px-[40%] transition-all duration-100"
-            : "bg-[#181433] absolute w-full h-[0px] text-white px-[40%]  transition-all duration-500"
+            ? "bg-slate-900 absolute w-full h-[220px] text-white px-[40%] transition-all duration-100"
+            : "bg-slate-900 absolute w-full h-[0px] text-white px-[40%]  transition-all duration-500"
         }
       >
         <button className="w-full">
