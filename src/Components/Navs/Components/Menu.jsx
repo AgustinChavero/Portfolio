@@ -10,7 +10,7 @@ function Menu() {
 
   return (
     <div className="fixed w-full top-0">
-      <nav className="bg-blue-900 flex justify-end text-white transition-all">
+      <nav className="bg-[#181433] flex justify-end text-white transition-all">
         <ul className="">
           <li>
             <button onClick={handleShow}>
@@ -22,8 +22,8 @@ function Menu() {
       <ul
         className={
           show === true
-            ? "bg-blue-900 absolute w-full h-[220px] text-white px-[40%] transition-all duration-100"
-            : "bg-blue-900 absolute w-full h-[0px] text-white px-[40%]  transition-all duration-500"
+            ? "bg-[#181433] absolute w-full h-[220px] text-white px-[40%] transition-all duration-100"
+            : "bg-[#181433] absolute w-full h-[0px] text-white px-[40%]  transition-all duration-500"
         }
       >
         <button className="w-full">
@@ -34,7 +34,9 @@ function Menu() {
                 : "hidden"
             }
           >
-            Sobre mi
+            <a href="#AboutMe" className="no-underline">
+              Sobre mi
+            </a>
           </li>
         </button>
         <button className="w-full">
@@ -45,7 +47,9 @@ function Menu() {
                 : "hidden"
             }
           >
-            Tecnologias
+            <a href="#Technologies" className="no-underline">
+              Tecnologias
+            </a>
           </li>
         </button>
         <button className="w-full">
@@ -56,7 +60,9 @@ function Menu() {
                 : "hidden"
             }
           >
-            Experiencia
+            <a href="#Experience" className="no-underline">
+              Experiencia
+            </a>
           </li>
         </button>
         <button className="w-full">
@@ -67,7 +73,9 @@ function Menu() {
                 : "hidden"
             }
           >
-            Estudios
+            <a href="#Studies" className="no-underline">
+              Estudios
+            </a>
           </li>
         </button>
         <button className="w-full">
@@ -78,7 +86,9 @@ function Menu() {
                 : "hidden"
             }
           >
-            Proyectos
+            <a href="#Proyects" className="no-underline">
+              Proyectos
+            </a>
           </li>
         </button>
       </ul>

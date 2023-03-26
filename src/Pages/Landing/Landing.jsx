@@ -5,7 +5,7 @@ import Contacts from "./Components/Contacts";
 
 function Landing() {
   return (
-    <div className="overflow-hidden pt-10">
+    <div className="overflow-hidden pt-10 bg-stars min-h-screen">
       <div className="flex justify-center rounded-full px-5">
         <ImageProfile />
       </div>

@@ -20,7 +20,7 @@ function App() {
   }, []);
   const { pathname } = useLocation();
   return (
-    <div className="min-h-screen bg-gradient-to-b from-orange-600 via-amber-200 to-orange-300">
+    <div className="bg-stars bg-fixed">
       {pathname !== "/" && <Navbar />}
       <Routes>
         <Route path="/" element={<Landing />} />

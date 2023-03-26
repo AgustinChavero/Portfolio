@@ -22,7 +22,7 @@ function Navbar() {
   }, []);
 
   return (
-    <div className="relative">
+    <div className="relative z-50">
       <Menu />
     </div>
   );
