@@ -10,19 +10,19 @@ function Home() {
       <div id="AboutMe" className="overflow-hidden pt-16">
         <AboutMe />
       </div>
-      <div
-        id="Technologies"
-        className="overflow-hidden flex justify-center py-24"
-      >
+      <div id="Technologies" className="overflow-hidden flex justify-center">
         <Technologies />
       </div>
-      <div id="Experience" className="flex justify-center py-24">
+      <div
+        id="Experience"
+        className="overflow-hidden flex justify-center py-24"
+      >
         <Experience />
       </div>
-      <div id="Studies" className="flex justify-center py-24">
+      <div id="Studies" className="overflow-hidden flex justify-center py-24">
         <Studies />
       </div>
-      <div id="Proyects" className="flex justify-center py-24">
+      <div id="Proyects" className="overflow-hidden flex justify-center py-24">
         <Proyects />
       </div>
     </main>
