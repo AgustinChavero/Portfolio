@@ -1,30 +1,12 @@
-import { useEffect, useState } from "react";
-import Menu from "./Components/Menu";
 import Nav from "./Components/Nav";
+import Menu from "./Components/Menu";
+import useMediaQuery from "../Hooks/UseMediaQuery";
+import { motion } from "framer-motion";
 
 function Navbar() {
-  const [windowSize, setWindowSize] = useState({
-    width: undefined,
-  });
-
-  useEffect(() => {
-    function handleResize() {
-      setWindowSize({
-        width: window.innerWidth,
-      });
-      console.log(windowSize);
-    }
-
-    window.addEventListener("resize", handleResize);
-    handleResize();
-
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
+  let smallScreens = useMediaQuery("(min-width: 1020px)");
   return (
-    <div className="relative z-50">
-      <Menu />
-    </div>
+    <motion.nav className="">{smallScreens ? <Nav /> : <Menu />}</motion.nav>
   );
 }
 

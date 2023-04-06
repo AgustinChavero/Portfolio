@@ -7,17 +7,6 @@ import Home from "./Pages/Home/Home";
 import Footer from "./Components/Footer/Footer";
 
 function App() {
-  const [width, setWidth] = useState(window.innerWidth);
-
-  useEffect(() => {
-    function actualizarAnchoNavegador() {
-      setWidth(window.innerWidth);
-    }
-    window.addEventListener("resize", actualizarAnchoNavegador);
-    return () => {
-      window.removeEventListener("resize", actualizarAnchoNavegador);
-    };
-  }, []);
   const { pathname } = useLocation();
   return (
     <div className="bg-black">

@@ -1,5 +1,6 @@
 import { useState } from "react";
-import MenuSVG from "../../../Assets/Icons/menu.svg";
+import { Link } from "react-router-dom";
+import { HiBars3, HiBars3BottomLeft } from "react-icons/hi2";
 
 function Menu() {
   const [show, setShow] = useState(false);
@@ -9,89 +10,50 @@ function Menu() {
   };
 
   return (
-    <div className="fixed w-full top-0">
-      <nav className="bg-slate-900 flex justify-end text-white transition-all">
-        <ul className="">
-          <li>
-            <button onClick={handleShow}>
-              <img src={MenuSVG} alt="menu" />
-            </button>
-          </li>
-        </ul>
-      </nav>
-      <ul
-        className={
-          show === true
-            ? "bg-slate-900 absolute w-full h-[220px] text-white px-[40%] transition-all duration-100"
-            : "bg-slate-900 absolute w-full h-[0px] text-white px-[40%]  transition-all duration-500"
-        }
-      >
-        <button className="w-full">
-          <li
-            className={
-              show === true
-                ? "border-b border-1 text-center border-white pb-2 font-bold"
-                : "hidden"
-            }
-          >
-            <a href="#AboutMe" className="no-underline">
-              Sobre mi
-            </a>
-          </li>
-        </button>
-        <button className="w-full">
-          <li
-            className={
-              show === true
-                ? "border-b border-1 text-center border-white py-2 font-bold"
-                : "hidden"
-            }
-          >
-            <a href="#Technologies" className="no-underline">
-              Tecnologias
-            </a>
-          </li>
-        </button>
-        <button className="w-full">
-          <li
-            className={
-              show === true
-                ? "border-b border-1 text-center border-white py-2 font-bold"
-                : "hidden"
-            }
-          >
-            <a href="#Experience" className="no-underline">
-              Experiencia
-            </a>
-          </li>
-        </button>
-        <button className="w-full">
-          <li
-            className={
-              show === true
-                ? "border-b border-1 text-center border-white py-2 font-bold"
-                : "hidden"
-            }
-          >
-            <a href="#Studies" className="no-underline">
-              Estudios
-            </a>
-          </li>
-        </button>
-        <button className="w-full">
-          <li
-            className={
-              show === true
-                ? "border-b border-1 text-center border-white py-2 font-bold"
-                : "hidden"
-            }
-          >
-            <a href="#Proyects" className="no-underline">
-              Proyectos
-            </a>
-          </li>
-        </button>
-      </ul>
+    <div
+      className={`transition-all text-white duration-100 ease-linear fixed top-0 bg-slate-900 z-50
+        ${show === true ? "w-full h-screen" : "w-20 h-20 rounded-br-full"}
+      `}
+    >
+      <button onClick={handleShow} className="">
+        {!show ? (
+          <HiBars3 className="w-12 h-12" />
+        ) : (
+          <HiBars3BottomLeft className="w-12 h-12" />
+        )}
+      </button>
+      {show && (
+        <>
+          <ul className="flex-col justify-center">
+            <li className="w-full text-center py-5 text-2xl font-light">
+              <Link to="#AboutMe" className="hover:border-b hover:border-white">
+                Sobre mi
+              </Link>
+            </li>
+            <li className="w-full text-center py-5 text-2xl font-light">
+              <Link
+                to="#Technologies"
+                className="hover:border-b hover:border-white"
+              >
+                Tecnologias
+              </Link>
+            </li>
+            <li className="w-full text-center py-5 text-2xl font-light">
+              <Link
+                to="#Proyects"
+                className="hover:border-b hover:border-white"
+              >
+                Proyectos
+              </Link>
+            </li>
+            <li className="w-full text-center py-5 text-2xl font-light">
+              <Link to="#Studies" className="hover:border-b hover:border-white">
+                Estudios y Experiencia
+              </Link>
+            </li>
+          </ul>
+        </>
+      )}
     </div>
   );
 }

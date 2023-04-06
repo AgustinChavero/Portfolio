@@ -29,7 +29,17 @@ function AboutMe() {
           </div>
         </div>
         <div className="pt-10 lg:flex lg:justify-center">
-          <div className="pb-10 lg:max-w-md">
+          <motion.div
+            className="pb-10 lg:max-w-md"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 2 }}
+            variants={{
+              visible: { opacity: 1, scale: 1 },
+              hidden: { opacity: 0, scale: 0 },
+            }}
+          >
             <h4 className="font-light text-xl md:text-5xl sm:text-2xl text-left p-5">
               PERSPECTIVA DE USUARIO
             </h4>
@@ -40,8 +50,18 @@ function AboutMe() {
                 decisiones.
               </p>
             </div>
-          </div>
-          <div className="pb-10 lg:max-w-md">
+          </motion.div>
+          <motion.div
+            className="pb-10 lg:max-w-md"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 2 }}
+            variants={{
+              visible: { opacity: 1, scale: 1 },
+              hidden: { opacity: 0, scale: 0 },
+            }}
+          >
             <h4 className="font-light text-xl md:text-5xl sm:text-2xl text-left p-5">
               SOLUCIONES DIGITALES
             </h4>
@@ -51,8 +71,18 @@ function AboutMe() {
                 el que beneficie a sus usuarios y reduzca costos.
               </p>
             </div>
-          </div>
-          <div className="pb-10 lg:max-w-md">
+          </motion.div>
+          <motion.div
+            className="pb-10 lg:max-w-md"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 2 }}
+            variants={{
+              visible: { opacity: 1, scale: 1 },
+              hidden: { opacity: 0, scale: 0 },
+            }}
+          >
             <h4 className="font-light text-xl md:text-5xl  sm:text-2xl text-left p-5">
               MANEJO WEB/APP INTUITIVO
             </h4>
@@ -62,8 +92,18 @@ function AboutMe() {
                 manejar, para que se pueda administrar de forma independiente.
               </p>
             </div>
-          </div>
-          <div className="pb-10 lg:max-w-md">
+          </motion.div>
+          <motion.div
+            className="pb-10 lg:max-w-md"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 2 }}
+            variants={{
+              visible: { opacity: 1, scale: 1 },
+              hidden: { opacity: 0, scale: 0 },
+            }}
+          >
             <h4 className="font-light text-xl md:text-5xl  sm:text-2xl text-left p-5">
               CONTROL DE GASTOS PREVISTOS
             </h4>
@@ -74,10 +114,20 @@ function AboutMe() {
                 proyectos, para optimizar gastos y aumentar beneficios.
               </p>
             </div>
-          </div>
+          </motion.div>
         </div>
         <div className="pt-10 lg:flex lg:justify-center">
-          <div className="pb-10 lg:max-w-md">
+          <motion.div
+            className="pb-10 lg:max-w-md"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 2 }}
+            variants={{
+              visible: { opacity: 1, scale: 1 },
+              hidden: { opacity: 0, scale: 0 },
+            }}
+          >
             <h4 className="font-light text-xl md:text-5xl  sm:text-2xl text-left p-5">
               RECLUTAMIENTO LABORAL
             </h4>
@@ -88,8 +138,18 @@ function AboutMe() {
                 laboral.
               </p>
             </div>
-          </div>
-          <div className="pb-10 lg:max-w-md">
+          </motion.div>
+          <motion.div
+            className="pb-10 lg:max-w-md"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 2 }}
+            variants={{
+              visible: { opacity: 1, scale: 1 },
+              hidden: { opacity: 0, scale: 0 },
+            }}
+          >
             <h4 className="font-light text-xl md:text-5xl sm:text-2xl text-left p-5">
               BUEN AMBIENTE LABORAL
             </h4>
@@ -99,8 +159,18 @@ function AboutMe() {
                 cooperación, dedicación, sacrificio y compromiso.
               </p>
             </div>
-          </div>
-          <div className="pb-10 lg:max-w-md">
+          </motion.div>
+          <motion.div
+            className="pb-10 lg:max-w-md"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 2 }}
+            variants={{
+              visible: { opacity: 1, scale: 1 },
+              hidden: { opacity: 0, scale: 0 },
+            }}
+          >
             <h4 className="font-light text-xl md:text-5xl  sm:text-2xl text-left p-5">
               PROACTIVIDAD Y MOTIVACION
             </h4>
@@ -111,8 +181,18 @@ function AboutMe() {
                 esfuerzo
               </p>
             </div>
-          </div>
-          <div className="pb-10 lg:max-w-md">
+          </motion.div>
+          <motion.div
+            className="pb-10 lg:max-w-md"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 2 }}
+            variants={{
+              visible: { opacity: 1, scale: 1 },
+              hidden: { opacity: 0, scale: 0 },
+            }}
+          >
             <h4 className="font-light text-xl md:text-5xl  sm:text-2xl text-left p-5">
               COMUNICACION INTERPERSONAL
             </h4>
@@ -124,7 +204,7 @@ function AboutMe() {
                 relaciones.
               </p>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </motion.div>

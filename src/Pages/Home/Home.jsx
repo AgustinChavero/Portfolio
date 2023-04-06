@@ -7,24 +7,27 @@ import Proyects from "./Components/Proyects";
 function Home() {
   return (
     <main className="">
-      <div id="AboutMe" className="overflow-hidden pt-16">
+      <section id="AboutMe" className="overflow-hidden lg:pt-16">
         <AboutMe />
-      </div>
-      <div id="Technologies" className="overflow-hidden flex justify-center">
+      </section>
+      <section
+        id="Technologies"
+        className="overflow-hidden flex justify-center"
+      >
         <Technologies />
-      </div>
-      <div
-        id="Experience"
+      </section>
+      <section
+        id="Proyects"
         className="overflow-hidden flex justify-center py-24"
       >
-        <Experience />
-      </div>
-      <div id="Studies" className="overflow-hidden flex justify-center py-24">
+        <Proyects className="" />
+      </section>
+      <section
+        id="Studies"
+        className="overflow-hidden flex justify-center py-24"
+      >
         <Studies />
-      </div>
-      <div id="Proyects" className="overflow-hidden flex justify-center py-24">
-        <Proyects />
-      </div>
+      </section>
     </main>
   );
 }

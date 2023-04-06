@@ -31,23 +31,33 @@ function Technologies() {
   return (
     <div className="bg-techs bg-fixed bg-cover bg-no-repeat w-full">
       <motion.div className="text-white text-4xl backdrop-blur-sm bg-black/70 w-full">
-        <motion.div
-          initial={{ y: -1000 }}
-          animate={{ y: 0 }}
-          transition={{ duration: 1.5 }}
-          className="flex justify-center py-10 bg-white/40 mb-10"
-        >
-          <h2 className="font-light text-xl md:text-5xl sm:text-2xl text-left p-5">
+        <div className="flex justify-center py-10 bg-white/40 mb-10">
+          <motion.h2
+            className="font-light text-xl md:text-5xl sm:text-2xl text-left p-5"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 2 }}
+            variants={{
+              visible: { opacity: 1, scale: 1 },
+              hidden: { opacity: 0, scale: 0 },
+            }}
+          >
             TECNOLOGIAS
-          </h2>
-        </motion.div>
+          </motion.h2>
+        </div>
         <div className="md:flex justify-center mx-10 py-16">
           {techs.map((e) => {
             return (
               <motion.div
-                initial={{ x: -1000 }}
-                animate={{ x: 0 }}
-                transition={{ duration: 1.5 }}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                transition={{ duration: 2 }}
+                variants={{
+                  visible: { opacity: 1, scale: 1 },
+                  hidden: { opacity: 0, scale: 0 },
+                }}
                 className="p-5"
               >
                 <div className="flex justify-center">
@@ -61,17 +71,32 @@ function Technologies() {
           })}
         </div>
         <div className="flex justify-center py-1 mb-10">
-          <h2 className="font-light text-xl md:text-4xl sm:text-2xl text-left p-1">
+          <motion.h2
+            className="font-light text-xl md:text-4xl sm:text-2xl text-left p-1"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 2 }}
+            variants={{
+              visible: { opacity: 1, scale: 1 },
+              hidden: { opacity: 0, scale: 0 },
+            }}
+          >
             TECNOLOGIAS EN PROCESO
-          </h2>
+          </motion.h2>
         </div>
         <div className="md:flex justify-center mx-10 py-16">
           {loads.map((e) => {
             return (
               <motion.div
-                initial={{ x: -1000 }}
-                animate={{ x: 0 }}
-                transition={{ duration: 1.5 }}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                transition={{ duration: 2 }}
+                variants={{
+                  visible: { opacity: 1, scale: 1 },
+                  hidden: { opacity: 0, scale: 0 },
+                }}
                 className="p-5"
               >
                 <div className="flex justify-center">
