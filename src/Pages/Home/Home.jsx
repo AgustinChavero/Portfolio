@@ -16,10 +16,7 @@ function Home() {
       >
         <Technologies />
       </section>
-      <section
-        id="Proyects"
-        className="overflow-hidden flex justify-center py-24"
-      >
+      <section id="Proyects" className="overflow-hidden py-24">
         <Proyects className="" />
       </section>
       <section
