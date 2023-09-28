@@ -1,86 +1,78 @@
 "use client";
 
+import Abilities from "@/reactive/cards/card-abilities";
+
 export default function Profile() {
   return (
-    <aside className="bg-slate-800 max-w-md h-screen sticky top-0 left-0 text-white py-1">
-      <article className="flex flex-col items-center gap-3">
-        <img src="/personal/profile.png" alt="" className="rounded-full w-60 my-4" />
-        <h2 className="font-bold text-3xl">Agustin Daniel Chavero</h2>
-        <h3 className="font-semibold text-xl text-black bg-gray-100 p-2 rounded-lg">
-          Backend Developer
-        </h3>
-        <section className="mx-4">
-          <ul className="flex gap-x-3">
-            <li className="p-2 rounded-xl">
-              <a href="https://api.whatsapp.com/send?phone=5492612797321" target="_blank">
-                <img
-                  src="/social/whatsapp.svg"
-                  alt="Whatsapp"
-                  className="w-8 hover:scale-125 transition-all duration-200"
-                />
-              </a>
-            </li>
-            <li className="p-2 rounded-xl">
-              <a href="https://github.com/AgustinChavero" target="_blank">
-                <img
-                  src="/social/github.svg"
-                  alt="GitHub"
-                  className="w-8 hover:scale-125 transition-all duration-200"
-                />
-              </a>
-            </li>
-            <li className="p-2 rounded-xl">
-              <a href="https://www.linkedin.com/in/agustinchavero/" target="_blank">
-                <img
-                  src="/social/linkedin.svg"
-                  alt="Linkedin"
-                  className="w-8 hover:scale-125 transition-all duration-200"
-                />
-              </a>
-            </li>
-            <li className="p-2 rounded-xl">
-              <a href="https://www.instagram.com/agustinchavero.dev/" target="_blank">
-                <img
-                  src="/social/instagram.svg"
-                  alt="Instagram"
-                  className="w-8 hover:scale-125 transition-all duration-200"
-                />
-              </a>
-            </li>
-            <li className="p-2 rounded-xl">
-              <a
-                href="https://www.facebook.com/profile.php?id=100094240187280"
-                target="_blank"
-              >
-                <img
-                  src="/social/facebook.svg"
-                  alt="Facebook"
-                  className="w-8 hover:scale-125 transition-all duration-200"
-                />
-              </a>
-            </li>
-          </ul>
-        </section>
-      </article>
-      <article className="text-black">
-        <section className="flex gap-x-5 bg-gray-100/80 my-2 mx-6 rounded-xl p-3 items-center">
-          <img src="/icons/phone.svg" alt="Phone" className="w-8 p-1" />
-          <p>+5492612797321</p>
-        </section>
-        <section className="flex gap-x-5 bg-gray-100/80 my-2 mx-6 rounded-xl p-3 items-center">
-          <img src="/icons/location.svg" alt="Location" className="w-8 p-1" />
-          <p>Mendoza, Argentina</p>
-        </section>
-        <section className="flex gap-x-5 bg-gray-100/80 my-2 mx-6 rounded-xl p-3 items-center">
-          <img src="/icons/email.svg" alt="Email" className="w-8 p-1" />
-          <p>agustindanielchavero@gmail.com</p>
-        </section>
-      </article>
-      <article className="flex justify-center text-white py-5">
-        <button className="bg-green-700 p-4 rounded-2xl hover:bg-green-800">
-          Descargar CV
-        </button>
-      </article>
-    </aside>
+    <article className="">
+      <h1 className="text-center font-bold text-6xl py-9">Sobre mi</h1>
+      <div className="flex items-center justify-center">
+        <article className="bg-custom_skyblue rounded-xl p-5 text-black text-lg space-y-3 max-w-5xl">
+          <p>Ante todo, gracias por estar aca</p>
+          <p>
+            Soy un Backend Developer de Mendoza-Argentina, con casi un año de experiencia
+            en desarrollo web/software. Me encuentro siempre esta en la busqueda de nuevos
+            desafios u oportunidades que me hagan crecer tanto personal como
+            profesionalmente.
+          </p>
+          <p>
+            Puedo llevar adelante proyectos garantizando un solido proceso de desarrollo
+            en el que se le preparara para ser escalable, seguro y amigable para el
+            usuario. Garantizando de esta manera su exito desde el surgimiento hasta el
+            estrellato.
+          </p>
+          <h6>Gracias a mis estudios y experiencias he logrado destacar en:</h6>
+          <div className="space-y-10">
+            <Abilities
+              image="/icons/email.svg"
+              alt="Capacity"
+              tittle="Capacidades"
+              content="Desarrollador Backend de API RESTful altamente motivado con habilidades y
+              experiencia previa en tecnologías como NodeJS, Express, JavaScript, NestJS,
+              TypeScript, Python, Django. Junto al manejo de Bases de Datos SQL y NoSQL a
+              través de MySQL, PostgreSQL y SQLite."
+            />
+            <Abilities
+              image="/icons/email.svg"
+              alt="Capacity"
+              tittle="Capacidades"
+              content="Conocimiento actualizado de las últimas tecnologías y tendencias en el
+                campo del Desarrollo Web y Aplicaciones, lo que me permite ofrecer
+                soluciones innovadoras y eficientes."
+            />
+            <Abilities
+              image="/icons/email.svg"
+              alt="Capacity"
+              tittle="Capacidades"
+              content="Excelentes habilidades de comunicación oral y escrita, orientado a las
+                metodologías agiles de trabajo a través de plataformas como Jira y Trello,
+                lo que me permite trabajar de manera efectiva en equipo, presentar ideas
+                claras y adaptarme a diferentes situaciones."
+            />
+            <Abilities
+              image="/icons/email.svg"
+              alt="Capacity"
+              tittle="Capacidades"
+              content="Si la situacion lo requiere, poseo los contactos necesarios para reunir un
+                equipo de desarrollo capacitado para poder llevar adelante cualquier
+                proyecto."
+            />
+            <Abilities
+              image="/icons/email.svg"
+              alt="Capacity"
+              tittle="Capacidades"
+              content="Apasionado por aprender y mejorar constantemente mis habilidades, siempre
+                dispuesto a asumir nuevos retos y enfrentarlos con determinación."
+            />
+          </div>
+          <p>
+            Como puede ver en mi currículum adjunto, que puede descargar dando click en el
+            boton debajo del apartado izquierdo, cumplo con todos esos requisitos y más.
+          </p>
+          <p>Me encantaría poder hablar sobre nuevas oportunidades junto a usted</p>
+          <p>No dude en comunicarse conmigo.</p>
+        </article>
+      </div>
+    </article>
   );
 }
