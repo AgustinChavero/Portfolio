@@ -23,6 +23,7 @@ const config: Config = {
         custom_browno: "#71443f",
         custom_blue: "#5b88a5",
         custom_skyblue: "#d3dbd9",
+        custom_highblue: "#08295e",
       },
     },
   },

@@ -10,14 +10,8 @@ export default function NavPC() {
         </li>
         <li className=" text-center">
           <a href="">
-            <img src="/icons/technologies.svg" alt="Technologies" className="w-10 p-1" />
-            Tecnologias
-          </a>
-        </li>
-        <li className=" text-center">
-          <a href="">
             <img src="/icons/resume.svg" alt="Resume" className="w-10 p-1" />
-            CV
+            Curriculum
           </a>
         </li>
         <li className=" text-center">
