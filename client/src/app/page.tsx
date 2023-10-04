@@ -2,6 +2,7 @@
 import NavPC from "@/components/nav/nav-pc";
 import Aside from "@/components/aside/aside";
 import Profile from "@/components/profile/profile";
+import Technologies from "@/reactive/technologies/technologies";
 import Resume from "@/components/resume/resume";
 import Jobs from "@/components/jobs/jobs";
 import Contact from "@/components/contact/contact";
@@ -18,6 +19,9 @@ export default function Home() {
         </header>
         <section id="profile" className="px-10">
           <Profile />
+        </section>
+        <section id="profile" className="px-10">
+          <Technologies />
         </section>
         <section id="resume" className="px-10">
           <Resume />
