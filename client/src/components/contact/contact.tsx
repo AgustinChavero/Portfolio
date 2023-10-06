@@ -1,8 +1,8 @@
 export default function Contact() {
   return (
     <article className="py-10 flex flex-col justify-center items-center">
-      <section className="bg-gray-300 text-black rounded-lg p-10 lg:w-2/3 flex-col justify-center">
-        <p className="border-b-2 border-black">Enviame un correo electronico</p>
+      <section className="bg-[#011223] text-white rounded-lg p-10 lg:w-2/3 flex-col justify-center">
+        <p className="border-b-2 border-white">Enviame un correo electronico</p>
         <form action="" method="post" className="flex-col">
           <section className="flex justify-between w-full">
             <div className="flex justify-between py-4 w-full">

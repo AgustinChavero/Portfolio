@@ -1,10 +1,14 @@
 "use client";
 export default function Profile() {
   return (
-    <article className="">
-      <h3 className="text-center font-bold text-6xl py-9">Sobre mi</h3>
+    <article className="flex flex-col justify-center items-center">
+      <div className="w-full lg:w-3/4 py-10">
+        <h3 className="text-left font-bold text-6xl border-b-2 border-white py-9 lg:pl-10">
+          Sobre mi
+        </h3>
+      </div>
       <div className="flex items-center justify-center">
-        <article className="bg-custom_skyblue rounded-xl p-5 text-black text-lg space-y-3 max-w-5xl">
+        <article className="bg-[#011223] rounded-lg p-5 text-white text-lg space-y-3 max-w-5xl shadow-black shadow-md">
           <p>Ante todo, gracias por estar aca</p>
           <p>
             Soy un Backend Developer de Mendoza-Argentina, con casi un año de experiencia
@@ -21,7 +25,7 @@ export default function Profile() {
           <h6>Gracias a mis estudios y experiencias he logrado destacar en:</h6>
           <ul className="grid grid-cols-2 gap-4">
             <li className="mx-auto">
-              <article className="bg-gray-700 relative text-white border-2 border-white flex space-x-14 rounded-lg max-w-sm p-3">
+              <article className="bg-[#ffffff16] relative text-white flex space-x-14 rounded-lg max-w-sm p-3">
                 <img
                   src="/icons/email.svg"
                   alt="Capacity"
@@ -38,7 +42,7 @@ export default function Profile() {
               </article>
             </li>
             <li className="mx-auto">
-              <article className="bg-gray-700 relative text-white border-2 border-white flex space-x-14 rounded-lg max-w-sm p-3">
+              <article className="bg-[#ffffff16] relative text-white flex space-x-14 rounded-lg max-w-sm p-3">
                 <img
                   src="/icons/email.svg"
                   alt="Capacity"
@@ -54,7 +58,7 @@ export default function Profile() {
               </article>
             </li>
             <li className="mx-auto">
-              <article className="bg-gray-700 relative text-white border-2 border-white flex space-x-14 rounded-lg max-w-sm p-3">
+              <article className="bg-[#ffffff16] relative text-white flex space-x-14 rounded-lg max-w-sm p-3">
                 <img
                   src="/icons/email.svg"
                   alt="Capacity"
@@ -72,7 +76,7 @@ export default function Profile() {
               </article>
             </li>
             <li className="mx-auto">
-              <article className="bg-gray-700 relative text-white border-2 border-white flex space-x-14 rounded-lg max-w-sm p-3">
+              <article className="bg-[#ffffff16] relative text-white flex space-x-14 rounded-lg max-w-sm p-3">
                 <img
                   src="/icons/email.svg"
                   alt="Capacity"
@@ -90,7 +94,7 @@ export default function Profile() {
               </article>
             </li>
             <li className="mx-auto">
-              <article className="bg-gray-700 relative text-white border-2 border-white flex space-x-14 rounded-lg max-w-sm p-3">
+              <article className="bg-[#ffffff16] relative text-white flex space-x-14 rounded-lg max-w-sm p-3">
                 <img
                   src="/icons/email.svg"
                   alt="Capacity"
@@ -107,7 +111,7 @@ export default function Profile() {
               </article>
             </li>
             <li className="mx-auto">
-              <article className="bg-gray-700 relative text-white border-2 border-white flex space-x-14 rounded-lg max-w-sm p-3">
+              <article className="bg-[#ffffff16] relative text-white flex space-x-14 rounded-lg max-w-sm p-3">
                 <img
                   src="/icons/email.svg"
                   alt="Capacity"
